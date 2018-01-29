@@ -2,8 +2,8 @@ import React from 'react';
 import '../App.css';
 import {Button, Grid, Col, Row, Panel} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
-import '../libs/bootstrap-3.3.7-dist 2/css/bootstrap.css';
-
+import '../lib/bootstrap-3.3.7-dist/css/bootstrap.css';
+// https://github.com/tornadoweb/tornado/blob/master/demos/blog/Dockerfile
 const App=()=>{
     return (
         <Panel>
