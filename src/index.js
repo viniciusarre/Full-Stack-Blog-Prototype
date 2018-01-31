@@ -6,10 +6,15 @@ import {Route, Switch} from 'react-router';
 import {Provider} from 'react-redux';
 import Posts from "./Components/Posts";
 import Add from "./Components/Add";
-import {createStore} from 'redux';
+import {createStore, applyMiddleware} from 'redux';
 import operations from "./Reducers/operations";
-
-export let store = createStore(operations);
+import thunk from 'redux-thunk';
+import logger from 'redux-logger';
+const middleware = [ thunk, logger]
+export const store = createStore(
+    operations,
+    applyMiddleware(...middleware)
+);
 export const render = () => ReactDOM.render(
     <Provider store={store}>
         <BrowserRouter>

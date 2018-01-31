@@ -1,5 +1,5 @@
 import {defaultState} from "../State/defaultState";
-import {ADD, DELETE, UPDATE} from "../Actions/const";
+import {ADD, DELETE, FEEDBACK, RECEIVE, UPDATE} from "../Actions/const";
 
 export default(prevState = defaultState, action) => {
   switch (action.type){
@@ -19,6 +19,13 @@ export default(prevState = defaultState, action) => {
               action,
               ...prevState.slice(action.id+1)
           ];
+      case RECEIVE:
+          return[
+              ...action.payload
+        ];
+      case FEEDBACK:
+          return action.payload.success
+          ;
       default:
         return prevState;
   }

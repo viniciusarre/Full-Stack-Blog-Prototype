@@ -5,6 +5,7 @@ import {AddPost} from "../Containers/AddPost";
 import {getDirect} from "../Containers/redirect";
 import {Redirect} from 'react-router';
 
+
 export const Add = () =>{
         return(
             <div>
