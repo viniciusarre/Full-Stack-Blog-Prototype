@@ -20,7 +20,7 @@ export default class Map extends Component {
                     <Col key={ind} md={12}
                          style={{boxShadow: '10px 10px 5px #888888', marginTop: 20, userSelect: 'none'}}>
                         <blockquote style={{wordWrap: 'break-word'}}>
-                            <h1>#{ind} {elem.title}</h1>
+                            <h1>#{ind+1} {elem.title}</h1>
                             <p>{elem.body}</p>
                         </blockquote>
                         <Col md={6}>

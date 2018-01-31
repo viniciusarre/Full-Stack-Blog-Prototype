@@ -12,17 +12,6 @@ insert into post values (DEFAULT, 'Third post', 'Third Body');
 insert into post values (DEFAULT, 'Fourth post', 'Fourth Body');
 insert into post values (DEFAULT, 'Fifth post', 'Fifth Body');
 
-insert into post values (DEFAULT, 'skjdskjdk', 'dkjflkdfjdkslj')
+select * from post order by idpost;
 
-insert into post values (DEFAULT, 'awq', 'asasasassasaa')
-
-delete from post where idpost = 1
-SELECT * FROM post WHERE idpost = 17
-select * from post;
-
-
-DELETE FROM post WHERE idpost = 45454
-insert into post (100, 'teste','teste')
-
-update post set title = 'title test', body = 'body test' where idpost = 5
 
