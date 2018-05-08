@@ -6,7 +6,7 @@ class DAO:
     def connect(self):
         try:
             self.c = psycopg2.connect\
-                ("dbname='simple_blog' user='postgres' host='localhost' password='123456' port='5433'")
+                ("dbname='simple_blog' user='postgres' host='localhost' password='123456' port='5432'")
             self.connection = self.c.cursor()
         except Exception as error:
             print("Error connecting to the Database", error)
